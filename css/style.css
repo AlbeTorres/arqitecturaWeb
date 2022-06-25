@@ -1,0 +1,151 @@
+:root{
+    --blanco: #fff;
+    --negro: #111111;
+    --gris:#343A40;
+
+    --fuentePrincipal: 'Raleway', sans-serif;
+
+}
+
+/* globales */
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+h1,h2,h3{
+    font-weight: 900;
+    margin: 1rem 0 4rem 0;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 5.8rem;
+}
+
+h3{
+    font-size: 5rem;
+}
+
+a{
+    text-decoration: none
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn{
+    color: var(--gris);
+    background-color: var(--blanco);
+    padding: .5rem 2rem;
+    border: 1px solid var(--gris);
+    transition: background-color .3s;
+}
+
+.btn:hover{
+    color: var(--blanco);
+    background-color: var(--gris);
+}
+
+/*Utilidades*/
+.text-center{
+    text-align: center;
+}
+
+.mt-5{
+    margin-top: 5rem;
+}
+
+/* header */
+.header{
+    min-height: 60rem;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    padding: 5rem 0;
+
+}
+
+.contenido-header{
+    color: var(--blanco);
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    height: calc(60rem - 4rem);
+}
+
+.nombre-sitio{
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.nombre-sitio span{
+    font-weight: 900;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto a{
+    color: var(--blanco);
+}
+
+
+
+@media (min-width:768px) {
+    .header{
+        padding: 2rem 0;
+    }
+    
+    .nombre-sitio{
+        
+        font-size: 5rem;
+    }
+    
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width:321px) {
+    .contacto a{
+           font-size: 1.5rem ;
+    }
+        
+        
+        
+}
